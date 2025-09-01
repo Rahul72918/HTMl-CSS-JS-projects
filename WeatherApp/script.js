@@ -17,7 +17,8 @@ cityName.style.fontWeight = '700';
 cityName.style.marginBottom = '8px';
 weatherBox.prepend(cityName);
 
-const api_key = "79575b0bac4c2ec6fda703466ce8b639";
+const api_key = API_KEY;
+;
 
 // ✅ Fetch weather by city
 async function checkWeather(city) {
