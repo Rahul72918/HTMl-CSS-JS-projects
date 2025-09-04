@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+  <div id="movie-details" class="movie-detail-card">
+    <div class="movie-top">
+      <img id="movie-poster" src="placeholder.jpg" alt="Movie Poster">
+      <div class="movie-info">
+        <div class="movie-title-release">
+          <h1 id="movie-title">Movie Title</h1>
+          <span id="movie-release">Release Date</span>
+        </div>
+        <p id="movie-genres">Genres</p>
+        <p><strong>Rating:</strong> <span id="movie-rating">⭐ 0.0</span></p>
+        <div class="movie-synopsis">
+          <p id="movie-overview">Synopsis will appear here.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="movie-cast" id="cast-container">
+      <span>Cast</span>
+      <!-- Cast members will be appended here -->
+    </div>
+
+    <div class="movie-trailer">
+      <iframe id="movie-trailer" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="movie.js"></script>
+</body>
+
+</html>

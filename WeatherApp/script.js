@@ -18,7 +18,7 @@ cityName.style.marginBottom = '8px';
 weatherBox.prepend(cityName);
 
 const api_key = API_KEY;
-;
+
 
 // ✅ Fetch weather by city
 async function checkWeather(city) {
