@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movie-details {
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.top-section{
+    display:flex;
+}
+
+.movie-detail-card {
+    display: flex;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-detail-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+
+.movie-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.movie-detail-card img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.movie-title-release {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-title-release h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.movie-title-release span {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.movie-genres {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.movie-synopsis {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.movie-cast {
+  display: grid;
+    grid-auto-flow: column;           /* horizontal layout */
+    grid-auto-columns: minmax(100px, 1fr); /* width of each card */
+    gap: 20px;
+    overflow-x: auto;                 /* scrollable */
+    padding: 10px;
+}
+
+.cast-member {
+    text-align: center;
+    min-width: 100px;
+}
+
+.cast-member img {
+    width: 100px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cast-member img:hover {
+    transform: scale(1.05);
+}
+
+.cast-member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.movie-trailer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.movie-trailer iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .movie-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-detail-card img {
+        width: 200px;
+    }
+
+    .movie-title-release {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .movie-cast {
+        justify-content: center;
+    }
+}
